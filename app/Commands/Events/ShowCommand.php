@@ -3,7 +3,6 @@
 namespace App\Commands\Events;
 
 use App\Commands\Command;
-use Exception;
 use JetBrains\PhpStorm\NoReturn;
 use OwenVoke\POAP\Client;
 use function Termwind\render;
@@ -16,7 +15,8 @@ class ShowCommand extends Command
     /** {@inheritdoc} */
     protected $description = 'Display the details for an event';
 
-    #[NoReturn] public function handle(Client $client): void
+    #[NoReturn]
+    public function handle(Client $client): void
     {
         $event = $client->event()->show(
             $this->argument('id')
