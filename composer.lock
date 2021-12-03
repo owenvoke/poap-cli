@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b5895876767a5d8b160268052f399886",
+    "content-hash": "d33658fe39096775a4f1e3e815307557",
     "packages": [
         {
             "name": "brick/math",
@@ -2402,6 +2402,82 @@
                 "source": "https://github.com/nunomaduro/laravel-desktop-notifier/tree/v2.5.1"
             },
             "time": "2020-10-30T15:41:03+00:00"
+        },
+        {
+            "name": "nunomaduro/termwind",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nunomaduro/termwind.git",
+                "reference": "0454f539f0c5239136e6a22ecc9aac5dd203658c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nunomaduro/termwind/zipball/0454f539f0c5239136e6a22ecc9aac5dd203658c",
+                "reference": "0454f539f0c5239136e6a22ecc9aac5dd203658c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^8.0",
+                "symfony/console": "^5.3.0"
+            },
+            "require-dev": {
+                "ergebnis/phpstan-rules": "^0.15.3",
+                "pestphp/pest": "^1.20.0",
+                "phpstan/phpstan": "^0.12.99",
+                "phpstan/phpstan-strict-rules": "^0.12.11",
+                "styleci/cli": "^1.2",
+                "symfony/var-dumper": "^5.2.7",
+                "thecodingmachine/phpstan-strict-rules": "^0.12.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Termwind\\": "src/"
+                },
+                "files": [
+                    "src/Functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "Its like Tailwind CSS, but for the console.",
+            "keywords": [
+                "cli",
+                "console",
+                "css",
+                "package",
+                "php",
+                "style"
+            ],
+            "support": {
+                "issues": "https://github.com/nunomaduro/termwind/issues",
+                "source": "https://github.com/nunomaduro/termwind/tree/v1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/paypalme/enunomaduro",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/nunomaduro",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/xiCO2k",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-11-28T05:11:02+00:00"
         },
         {
             "name": "owenvoke/poap",

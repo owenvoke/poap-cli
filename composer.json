@@ -9,6 +9,7 @@
         "http-interop/http-factory-guzzle": "^1.2",
         "illuminate/http": "^8.0",
         "laravel-zero/framework": "^8.8",
+        "nunomaduro/termwind": "^1.0",
         "owenvoke/poap": "^1.4"
     },
     "require-dev": {
