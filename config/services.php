@@ -4,6 +4,8 @@ return [
 
     'poap' => [
 
+        'auth_url' => env('POAP_API_AUTH_URL'),
+
         'client_id' => env('POAP_API_CLIENT_ID'),
         'client_secret' => env('POAP_API_CLIENT_SECRET'),
         'audience' => env('POAP_API_AUDIENCE'),
