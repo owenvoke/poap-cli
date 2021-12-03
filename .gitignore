@@ -1,6 +1,7 @@
+/build
 /vendor
 /.env
-/.idea
-/.vscode
-/.vagrant
-.phpunit.result.cache
+/.phpunit.result.cache
+/.php_cs.cache
+/composer.lock
+/phpunit.xml
