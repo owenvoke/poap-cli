@@ -19,10 +19,10 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(Client::class, function ($app) {
             $apiToken = Cache::remember(config('poap.api_key_cache_id'), now()->addHours(12), function () {
                 $response = Http::asJson()->post(sprintf('%s/oauth/token', config('services.poap.auth_url')), [
-                    'audience' => 'owenvoke',
-                    'grant_type' => 'client_credentials',
+                    'audience' => config('services.poap.audience'),
                     'client_id' => config('services.poap.client_id'),
                     'client_secret' => config('services.poap.client_secret'),
+                    'grant_type' => 'client_credentials',
                 ]);
 
                 throw_unless(
@@ -34,6 +34,8 @@ class AppServiceProvider extends ServiceProvider
                     isset($response['access_token'], $response['expires_in']) && $response['access_token'] !== null,
                     'Invalid Bearer token returned from the Auth0 API'
                 );
+                
+                return $response['access_token'];
             });
 
             return tap(new Client())->authenticate($apiToken, null, Client::AUTH_ACCESS_TOKEN);
