@@ -3,7 +3,6 @@
 namespace App\Commands\Events;
 
 use App\Commands\Command;
-use Illuminate\Support\Collection;
 use JetBrains\PhpStorm\NoReturn;
 use OwenVoke\POAP\Client;
 use function Termwind\render;
