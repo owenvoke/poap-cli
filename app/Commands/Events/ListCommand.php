@@ -23,9 +23,10 @@ class ListCommand extends Command
     public function handle(Client $client): void
     {
         $response = $client->event()->all([
-            $this->option('expired'),
-            $this->option('editable'),
-            $this->option('private'),
+            'name' => (string) $this->argument('name') ?? '',
+            'expired' => (bool) $this->option('expired') ? 'true' : 'false',
+            'editable' => (bool) $this->option('editable') ? 'true' : 'false',
+            'private' => (bool) $this->option('private') ? 'true' : 'false',
         ]);
 
         if (isset($response['statusCode'])) {
