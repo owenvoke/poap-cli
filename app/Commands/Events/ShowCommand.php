@@ -18,16 +18,16 @@ class ShowCommand extends Command
     #[NoReturn]
     public function handle(Client $client): void
     {
-        $event = $client->event()->show(
+        $response = $client->event()->show(
             $this->argument('id')
         );
 
-        if (isset($event['statusCode'])) {
-            $this->showError($event['message'] ?? $event['error'] ?? 'An unknown error occurred');
+        if (isset($response['statusCode'])) {
+            $this->showError($response['message'] ?? $response['error'] ?? 'An unknown error occurred');
 
             exit(static::FAILURE);
         }
 
-        render(view('events.show', ['event' => $event]));
+        render(view('events.show', ['event' => $response]));
     }
 }
