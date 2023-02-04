@@ -4,18 +4,16 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "php": "^8.0",
-        "guzzlehttp/guzzle": "^7.4",
-        "http-interop/http-factory-guzzle": "^1.2",
-        "illuminate/http": "^8.0",
-        "illuminate/view": "^8.74",
-        "laravel-zero/framework": "^8.8",
-        "nunomaduro/termwind": "^1.0",
-        "owenvoke/poap": "^1.4"
+        "php": "^8.2"
     },
     "require-dev": {
-        "mockery/mockery": "^1.4.4",
-        "pestphp/pest": "^1.21"
+        "guzzlehttp/guzzle": "^7.5",
+        "http-interop/http-factory-guzzle": "^1.2",
+        "illuminate/http": "^9.49",
+        "illuminate/view": "^9.49",
+        "laravel-zero/framework": "^9.2",
+        "nunomaduro/termwind": "^1.15",
+        "owenvoke/poap": "^1.5"
     },
     "autoload": {
         "psr-4": {
@@ -34,5 +32,5 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "bin": ["poap"]
+    "bin": ["builds/poap"]
 }

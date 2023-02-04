@@ -11,7 +11,7 @@ A PHP CLI for managing your POAPs
 
 ## Install
 
-> Requires PHP 7.4 or later.
+> Requires PHP 8.2 or later.
 
 Via Composer
 
