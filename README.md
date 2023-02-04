@@ -30,6 +30,8 @@ docker run --rm ghcr.io/owenvoke/poap-cli:latest
 poap list
 ```
 
+> *Note:* The `POAP_API_TOKEN` environment variable must be set to your API token.
+
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.

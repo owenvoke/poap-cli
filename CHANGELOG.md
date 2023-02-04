@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## v1.0.1 - 2023-02-04
+
+### Fixed
+- Resolve correct authentication
+
 ## v1.0.0 - 2023-02-04
 
 ### Added
