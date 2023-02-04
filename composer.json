@@ -9,8 +9,8 @@
     "require-dev": {
         "guzzlehttp/guzzle": "^7.5",
         "http-interop/http-factory-guzzle": "^1.2",
-        "illuminate/http": "^9.49",
-        "illuminate/view": "^9.49",
+        "illuminate/http": "^9.50",
+        "illuminate/view": "^9.50",
         "laravel-zero/framework": "^9.2",
         "nunomaduro/termwind": "^1.15",
         "owenvoke/poap": "^1.5"
@@ -28,7 +28,10 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.2"
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
