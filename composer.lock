@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d72c62fb42183d60012bc0fdc69bebed",
+    "content-hash": "65ca661ab28c8a302d3b3b70c8bf7b29",
     "packages": [],
     "packages-dev": [
         {
@@ -2631,20 +2631,20 @@
         },
         {
             "name": "owenvoke/poap",
-            "version": "v1.5.0",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/owenvoke/poap-php.git",
-                "reference": "0c6860cb452cc12c6eb6c5d3b785dc3d976af604"
+                "reference": "00a1caca745fc26c12e94062f0b81300dcdd812d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/owenvoke/poap-php/zipball/0c6860cb452cc12c6eb6c5d3b785dc3d976af604",
-                "reference": "0c6860cb452cc12c6eb6c5d3b785dc3d976af604",
+                "url": "https://api.github.com/repos/owenvoke/poap-php/zipball/00a1caca745fc26c12e94062f0b81300dcdd812d",
+                "reference": "00a1caca745fc26c12e94062f0b81300dcdd812d",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4 || ^8.0",
+                "php": "^8.1",
                 "php-http/client-common": "^2.4",
                 "php-http/discovery": "^1.14",
                 "php-http/httplug": "^2.2",
@@ -2657,6 +2657,7 @@
                 "guzzlehttp/guzzle": "^7.4",
                 "guzzlehttp/psr7": "^2.1",
                 "http-interop/http-factory-guzzle": "^1.2",
+                "laravel/pint": "^1.2",
                 "pestphp/pest": "^1.20",
                 "php-http/mock-client": "^1.5",
                 "phpstan/phpstan": "^1.0",
@@ -2672,10 +2673,10 @@
             "license": [
                 "MIT"
             ],
-            "description": "An object oriented PHP wrapper for the POAP API",
+            "description": "An object-oriented PHP wrapper for the POAP API",
             "support": {
                 "issues": "https://github.com/owenvoke/poap-php/issues",
-                "source": "https://github.com/owenvoke/poap-php/tree/v1.5.0"
+                "source": "https://github.com/owenvoke/poap-php/tree/v1.5.1"
             },
             "funding": [
                 {
@@ -2687,7 +2688,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-30T10:57:23+00:00"
+            "time": "2023-02-04T22:13:18+00:00"
         },
         {
             "name": "php-http/client-common",
