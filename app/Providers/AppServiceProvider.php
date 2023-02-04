@@ -11,11 +11,6 @@ use function Termwind\renderUsing;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
     public function boot(): void
     {
         renderUsing($this->app->make(OutputInterface::class));
@@ -42,17 +37,11 @@ class AppServiceProvider extends ServiceProvider
                 return $response['access_token'];
             });
 
-            return tap(new Client())->authenticate($apiToken, null, Client::AUTH_ACCESS_TOKEN);
-        });
-    }
+            $client = new Client();
 
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
+            $client->authenticate($apiToken, null, Client::AUTH_ACCESS_TOKEN);
+
+            return $client;
+        });
     }
 }

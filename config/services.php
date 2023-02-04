@@ -4,7 +4,7 @@ return [
 
     'poap' => [
 
-        'auth_url' => env('POAP_API_AUTH_URL'),
+        'auth_url' => env('POAP_API_AUTH_URL', 'https://poapauth.auth0.com/oauth/token'),
 
         'client_id' => env('POAP_API_CLIENT_ID'),
         'client_secret' => env('POAP_API_CLIENT_SECRET'),

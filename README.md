@@ -19,6 +19,12 @@ Via Composer
 composer require owenvoke/poap-cli
 ```
 
+Via Docker
+
+```shell
+docker run --rm ghcr.io/owenvoke/poap-cli
+```
+
 ## Usage
 
 ```shell
